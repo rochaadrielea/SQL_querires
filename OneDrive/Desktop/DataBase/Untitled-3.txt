@@ -1,0 +1,12 @@
+-- database: c:\Users\Adriele\OneDrive\Desktop\BFH_CLASSES\DataBase\midterm1.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+SELECT * FROM "world_cities";
+
+
+SELECT COUNT(world_cities.city) AS NumberOfCities
+FROM world_cities
+WHERE World_cities.city LIKE 'A%'
+   
+    AND world_cities.country LIKE 'A%';

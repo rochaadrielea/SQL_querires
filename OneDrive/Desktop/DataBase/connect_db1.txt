@@ -1,0 +1,14 @@
+-- database: c:\Users\Adriele\OneDrive\Desktop\BFH_CLASSES\DataBase\world.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+SELECT * FROM "world_cities";
+
+SELECT count( world_cities.city) AS how_many
+from world_cities
+WHERE world_cities.country= 'United States';
+
+SELECT  world_cities.city AS stad,
+ world_cities.subcountry AS Kanton
+from world_cities
+LIMIT 5

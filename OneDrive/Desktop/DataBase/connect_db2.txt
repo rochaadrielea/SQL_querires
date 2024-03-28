@@ -1,0 +1,10 @@
+-- database: c:\Users\Adriele\OneDrive\Desktop\BFH_CLASSES\DataBase\movies2.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+SELECT * FROM "world-cities";
+
+
+SELECT actor_name "actors", salary
+FROM actors
+WHERE salary > (SELECT AVG(salary) FROM actors)  ORDER BY salary DESC LIMIT 4;;
